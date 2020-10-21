@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*基本色*/
+:root{
+--main-color: #;
+--accent-color: #424444;
+--bark-main-color: #;
+--text-bright-color: #fff;
+}
+/*基本設定：ページ全体*/
+body{
+margin:0;
+font-family: 'メイリオ'
+'Hiragino Kaku Gothic Pro'sans-serif;
+}
+.con1{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+min-height: 450;
+background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),
+url(img/oyazi.gif);
+background-position:center;
+background-size: cover;
+color: #fff;
+color: var(--text-bright-color);
+text-align: center;
+}
+.con1 h1{
+margin-top: 0;
+margin-bottom: 10px;
+font-family: 'Montserrat'.sans-serif;
+font-size: 18vw;
+letter-spacing: 0.1em;
+margin-left: 0.1;
+}
+.con1 p{
+margin-top: o;
+margin-bottom: 0;
+font-size: 18px;
+}
+@media(min-width: 768px){
+    .con1 h1{font-size: 138px;
+        
+    }
+    .con1 p{font-size: 20px;
+    }
+}
+.con1 a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentColor;
+    border-radius: 5px;
+    background-color: #424444;
+    background-color: var(--accent-color);
+    color: #FFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+.con1 a:hover{
+   background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3));  
+}
