@@ -5,7 +5,8 @@
 --main-color: #;
 --accent-color: #424444;
 --bark-main-color: #;
---text-bright-color: #fff;
+--text-bright-color: #FFF;
+--gray-color: #ddd;
 }
 /*基本設定：ページ全体*/
 body{
@@ -39,14 +40,7 @@ margin-left: 0.1;
 margin-top: o;
 margin-bottom: 0;
 font-size: 18px;
-}
-@media(min-width: 768px){
-    .con1 h1{font-size: 138px;
-        
-    }
-    .con1 p{font-size: 20px;
-    }
-}
+} 
 .con1 a{
     display: inline-block;
     margin-top: 20px;
@@ -59,6 +53,45 @@ font-size: 18px;
     font-size: 14px;
     text-decoration: none;
 }
-.con1 a:hover{
+@media(min-width: 768px){
+    .con1 h1{font-size: 138px;
+        
+    }
+    .con1 p{font-size: 20px;
+    }
+}
+
+.con1 a: hover{
    background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3));  
+}
+/*con2 2つ目のボックス*/
+.con2 h2.sr-only{
+    text-align: coenter;
+    font-size: 24px;
+}
+.con2 h2{
+    font-size: 18px;
+}
+.con2 p{
+    font-size: 14px;
+    opacity: 0.8;
+}
+.con2 a{
+    margin: 10px;
+    display: block;
+    border: solid 1px #ddd;
+    border: solid 1px var(--gray-color);
+    color: inherit;
+    text-decoration: none;
+}
+.con2 a: hover{
+    opacity: 0.8;
+}
+.con2 photo{
+    min-height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+con2.text{
+    margin: 10px;
 }
